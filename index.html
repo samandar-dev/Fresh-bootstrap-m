@@ -5,14 +5,666 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Freshnesecom</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" href="css/col.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+  <section class="header-box">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner inner">
+          <div class="header__top top row align-items-center justify-content-between">
+            <div class="top__link-box">
+              <ul class="top__list row align-items-center">
+                <li class="top__item w-auto d-inline-block">
+                  <a class="top__link top__link-act" href="#">Chat with us</a>
+                </li>
+                <li class="top__item w-auto d-inline-block">
+                  <a class="top__link" href="tel:+420336775664">+420 336 775 664</a>
+                </li>
+                <li class="top__item w-auto d-inline-block">
+                  <a class="top__link" href="#">info@freshnesecom.com</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="top__nav-box">
+              <nav class="top__nav nav">
+                <ul class="nav__list row align-items-center">
+                  <li class="nav__item w-auto d-inline-block">
+                    <a class="nav__link" href="#">Blog</a>
+                  </li>
+                  <li class="nav__item w-auto d-inline-block">
+                    <a class="nav__link" href="#">About Us</a>
+                  </li>
+                  <li class="nav__item w-auto d-inline-block">
+                    <a class="nav__link" href="#">Careers</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="header__content content row align-items-center justify-content-between">
+            <div class="content__logo-box">
+              <a class="content__logo-link" href="#">
+                <img src="imgs/logo.svg" alt="logo">
+              </a>
+            </div>
+
+            <div class="content__search-box search">
+              <form class="search__form row row-cols-3 align-items-center " action="#">
+                <div class="dropdown">
+                  <button class="btn form__drop-btn p-0 " type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All categories
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+                <input class="form__input" type="text" name="search" id="search"
+                  placeholder="Search Products, categories ...">
+                <button class="search-btn btn p-0 col-2">
+                  <i class='bx bx-search'></i>
+                </button>
+              </form>
+            </div>
+
+            <div class="content__btn-box btns row align-items-center justify-content-end w-auto">
+              <button class="btn btns__btn">
+                <i class='bx bx-user'></i>
+              </button>
+
+              <button class="btn btns__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  ...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+
+
+  <main class="main">
+    <div class="main__inner">
+
+      <div class="dropdowns-box drop">
+        <div class="container">
+          <div class="drop__inner inner">
+            <ul class="drop__list row row-cols-1 col-12 p-0 m-0">
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Bakery
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Fruit and vegetables
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Meat and fish
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Drinks
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Kitchen
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Special nutrition
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Baby
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="drop__item w-auto d-inline-block">
+                <div class="drop__item-box dropdown">
+                  <button class="btn drop__btn p-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Pharmacy
+                    <i class='bx bx-chevron-down'></i>
+                  </button>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="products">
+        <div class="container">
+          <div class="products__inner inner">
+
+            <div class="cotegory__menus-box row justify-content-between">
+              <div class="cotegor__menus co-menu col-3">
+                <h3 class="co-menu__title">Category menu</h3>
+                <ul class="co-menu__list">
+                  <li class="co-menu__item">
+                    <a class="co-menu__link" href="#">Bakery</a>
+                  </li>
+                  <li class="co-menu__item">
+                    <a class="co-menu__link" href="#">Fruit and vegetables</a>
+                  </li>
+                  <li class="co-menu__item">
+                    <a class="co-menu__link" href="#">Meat and fish</a>
+                  </li>
+                  <li class="co-menu__item">
+                    <a class="co-menu__link" href="#">Drinks</a>
+                  </li>
+                  <li class="co-menu__item">
+                    <a class="co-menu__link" href="#">Kitchen</a>
+                  </li>
+                </ul>
+
+                <div class="co-menu__btn-box">
+                  <a class="co-menu__btn" href="#">More categories
+                    <i class='bx bx-chevron-right'></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="cotegor__img-box co-img col-9">
+                <ul class="co-img__list row row-cols-6 align-items-center justify-content-center">
+                  <li class="co-img__item">
+                    <div class="co-img__item-box img-box">
+                      <p class="img-box__tit">Banner subfocus</p>
+                      <h3 class="img-box__title">Space for heading</h3>
+                      <button class="img-box__btn">Read recepies
+                        <i class='bx bx-chevron-right'></i>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="co-img__item">
+                    <div class="co-img__item-box img-box">
+                      <p class="img-box__tit">Banner subfocus</p>
+                      <h3 class="img-box__title">Space for heading</h3>
+                      <button class="img-box__btn">Read recepies
+                        <i class='bx bx-chevron-right'></i>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="products__menus produc">
+              <div class="produc__box cotegor row justify-content-between">
+                <div class="cotegor__menus co-menu col-3">
+                  <h3 class="co-menu__title">Best selling products</h3>
+                  <ul class="co-menu__list">
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Bakery</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Fruit and vegetables</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Meat and fish</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Drinks</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Kitchen</a>
+                    </li>
+                  </ul>
+
+                  <div class="co-menu__btn-box">
+                    <a class="co-menu__btn" href="#">More categories
+                      <i class='bx bx-chevron-right'></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="produc__shop-box pro-shop col-9">
+                  <ul class="pro-shop__list row col-12">
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <img class="shop-item__img" src="https:picsum.photos/id/6/237/180" alt="img">
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <span class="shop-item__img-span">- 36 %</span>
+                          <img class="shop-item__img" src="https:picsum.photos/id/8/237/180" alt="img">
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                            <span class="shop-buy__mony-tit">48.56</span>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <span class="shop-item__img-span">- 36 %</span>
+                          <img class="shop-item__img" src="https:picsum.photos/id/2/237/180" alt="img">
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                            <span class="shop-buy__mony-tit">48.56</span>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="products__menus produc">
+              <div class="produc__box cotegor row justify-content-between">
+                <div class="cotegor__menus co-menu col-3">
+                  <h3 class="co-menu__title">Best selling products</h3>
+                  <ul class="co-menu__list">
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Bakery</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Fruit and vegetables</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Meat and fish</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Drinks</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Kitchen</a>
+                    </li>
+                  </ul>
+
+                  <div class="co-menu__btn-box">
+                    <a class="co-menu__btn" href="#">More categories
+                      <i class='bx bx-chevron-right'></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="produc__shop-box pro-shop col-9">
+                  <ul class="pro-shop__list row col-12">
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <img class="shop-item__img" src="https:picsum.photos/id/6/237/180" alt="img">
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <span class="shop-item__img-span">- 36 %</span>
+                          <img class="shop-item__img" src="https:picsum.photos/id/8/237/180" alt="img">
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                            <span class="shop-buy__mony-tit">48.56</span>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <span class="shop-item__img-span">- 36 %</span>
+                          <img class="shop-item__img" src="https:picsum.photos/id/2/237/180" alt="img">
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                            <span class="shop-buy__mony-tit">48.56</span>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="products__menus produc">
+              <div class="produc__box cotegor row justify-content-between">
+                <div class="cotegor__menus co-menu col-3">
+                  <h3 class="co-menu__title">Best selling products</h3>
+                  <ul class="co-menu__list">
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Bakery</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Fruit and vegetables</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Meat and fish</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Drinks</a>
+                    </li>
+                    <li class="co-menu__item">
+                      <a class="co-menu__link" href="#">Kitchen</a>
+                    </li>
+                  </ul>
+
+                  <div class="co-menu__btn-box">
+                    <a class="co-menu__btn" href="#">More categories
+                      <i class='bx bx-chevron-right'></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="produc__shop-box pro-shop col-9">
+                  <ul class="pro-shop__list row col-12">
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <img class="shop-item__img" src="https:picsum.photos/id/6/237/180" alt="img">
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <span class="shop-item__img-span">- 36 %</span>
+                          <img class="shop-item__img" src="https:picsum.photos/id/8/237/180" alt="img">
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                            <span class="shop-buy__mony-tit">48.56</span>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="pro-shop__item col-4">
+                      <div class="pro-shop__item-box shop-item">
+                        <div class="shop-item__img-box">
+                          <span class="shop-item__img-span">- 36 %</span>
+                          <img class="shop-item__img" src="https:picsum.photos/id/2/237/180" alt="img">
+                        </div>
+
+                        <h4 class="shop-item__title">Product Title</h4>
+                        <p class="shop-item__text">
+                          Space for a product description
+                        </p>
+                        <div class="shop-item__buy shop-buy d-flex align-items-center justify-content-between">
+                          <p class="shop-buy__mony">1.48 USD <br>
+                            <span class="shop-buy__mony-tit">48.56</span>
+                          </p>
+                          <button class="shop-buy__btn">Buy now</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="customers__slider slider">
+        <div class="container">
+          <div class="slider__box row align-items-center justify-content-between">
+            <h3 class="slider__title w-auto">Our customers says</h3>
+            <button class="slider__btn btn w-auto">Button
+              <i class='bx bx-chevron-right'></i>
+            </button>
+          </div>
+
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner row">
+              <div class="carousel-item active">
+                <p class="carousel-text">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get
+                  all
+                  what you need by writiing a text here “
+                </p>
+
+                <img src="imgs/customers-user-img-1.png" alt="img">
+              </div>
+              <div class="carousel-item active">
+                <p class="carousel-text">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get
+                  all
+                  what you need by writiing a text here “
+                </p>
+
+                <img src="imgs/customers-user-img-1.png" alt="img">
+              </div>
+
+              <div class="carousel-item">
+                <p class="carousel-text">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get
+                  all
+                  what you need by writiing a text here “
+                </p>
+
+                <img src="imgs/customers-user-img-1.png" alt="img">
+              </div>
+
+              <div class="carousel-item">
+                <p class="carousel-text">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get
+                  all
+                  what you need by writiing a text here “
+                </p>
+
+                <img src="imgs/customers-user-img-1.png" alt="img">
+              </div>
+
+              <div class="carousel-item">
+                <p class="carousel-text">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get
+                  all
+                  what you need by writiing a text here “
+                </p>
+
+                <img src="imgs/customers-user-img-1.png" alt="img">
+              </div>
+              <div class="carousel-item">
+                <p class="carousel-text">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get
+                  all
+                  what you need by writiing a text here “
+                </p>
+
+                <img src="imgs/customers-user-img-1.png" alt="img">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </main>
+
+
+
+
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
   <script src="js/main.js"></script>
 </body>
 
